@@ -47,7 +47,7 @@ class IzParser:
                 self.__con.execute(
                     """
                         insert into News (date, title, url, content)
-                        values(:title, :date, :url, :text)
+                        values(:date, :title, :url, :text)
                     """, article)
 
     def start_parsing(self, num_page: int) -> None:
